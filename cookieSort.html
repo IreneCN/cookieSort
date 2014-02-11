@@ -36,10 +36,24 @@
 		{
 			console.log(i);
 			var currentCookie = myCookies[i];
-			console.log(currentCookie);
+			//console.log(currentCookie);
 			
+			if(currentCookie.shape == "square"){
+				console.log(currentCookie);
+				//because shape is square add the current cookie to myFaves list, 
+				myFaves.push(currentCookie);
+				}else{
+				//otherwise add the currentCookie to the rest
+				theRest.push(currentCookie);
+					
+					
+				} //this is the end of my if/else statement
 			
-		}
+		
+		} //this is the end of my for loop
+		console.log("finished lists");
+		console.log(myFaves);
+		console.log(theRest);
 			
 		</script>
 	</body>
